@@ -1,0 +1,141 @@
+.contact__form .form-control {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 0 !important;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact__form input.form-control {
+    margin-bottom: 2em;
+    height: calc(2.5em + .75rem + 2px);
+}
+
+:root {
+    --bg-color-red: 200;
+    --bg-color-green: 200;
+    --bg-color-blue: 200;
+}
+
+.ngikutin {
+    background-color: rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 0.25);
+    border-radius: 3%;
+    padding: 5%;
+    margin-top: 100px;
+}
+
+
+button.btn.ac_btn:hover {
+    color: var(--secondary-color);
+}
+
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    z-index: 999999999;
+    background: var(--text-color);
+    transform: translateX(100%);
+    animation: shift-rightwards 1s ease-in-out infinite;
+    animation-delay: .3s;
+}
+
+
+.file-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #8A3FFC;
+    background-color: var(--primary-color);
+    border: 1.5px dashed #8A3FFC;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-btn:hover {
+    color: #8A3FFC;
+    background-color: #fff;
+}
+
+.file-btn span {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #8A3FFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    /* background-color: #f3ecff; */
+}
+
+.selected-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3ecff;
+    border: 1px solid #e8d9fe;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.selected-file p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.selected-file button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A3FFC;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.selected-file button:hover {
+    color: #fff;
+    background-color: #8A3FFC;
+}
+
+@keyframes shift-rightwards {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        min-width: 100%;
+        /* Atur lebar minimum div menjadi 100% saat mode mobile */
+    }
+}

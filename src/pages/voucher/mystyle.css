@@ -1,0 +1,56 @@
+.voucher-container {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #b803ff4c, #d9a5e020);
+    min-height: 100vh;
+}
+
+.gacha-box {
+    padding: 30px;
+    background-color: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3d3d;
+}
+
+.win-text {
+    font-size: 24px;
+    color: green;
+    margin-top: 30px;
+}
+
+.lose-text {
+    font-size: 20px;
+    color: red;
+    margin-top: 40px;
+}
+
+.email-form {
+    margin-top: 20px;
+}
+
+.email-form input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}

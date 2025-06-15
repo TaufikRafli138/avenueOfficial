@@ -1,0 +1,196 @@
+.sec_sp {
+    margin-bottom: calc(3rem + 5.128vw)
+}
+
+.sec_sp_onAb {
+    margin-bottom: calc(2rem)
+}
+
+.sec_sp_sec {
+    margin-bottom: calc(3rem + 5.128vw);
+    background: var(--secDivTheme-color)
+}
+
+.table td,
+.table th {
+    color: var(--text-color);
+}
+
+.t_border {
+    border-color: var(--text-color) !important;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+    font-family: 'Raleway';
+}
+
+.progress {
+    height: 5px;
+    background: var(--secondary);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    background: var(--text-color);
+    animation: animate-positive 2s;
+    overflow: visible;
+    opacity: 0.9;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+.section-title {
+    font-size: 45px;
+}
+
+.service__title {
+    padding: 8px 0;
+    border-bottom: solid 2px var(--secondary-color);
+}
+
+.service-section .service-category-title {
+    padding-bottom: 4px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 33.33%;
+    /* 1/3 dari lebar parent */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Menyertakan padding dalam perhitungan lebar */
+    display: flex;
+    align-items: center;
+    /* Untuk mengatur vertikal tengah */
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    /* Warna dot */
+    border-radius: 50%;
+    /* Membuat dot menjadi bulat */
+    margin-right: 5px;
+    /* Jarak antara dot dan teks */
+}
+
+.player-container {
+    background-color: var(--secDivTheme-color);
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.album-cover {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.album-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: none;
+}
+
+/* Customize other styles as needed */
+
+
+/*! CSS Used keyframes */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Ubah nilai sesuai kebutuhan */
+    .sec_sp_onAb .d-flex {
+        flex-direction: column;
+        /* Mengubah tata letak menjadi vertikal */
+    }
+
+    .sec_sp_onAb .d-flex .col-lg-5,
+    .sec_sp_onAb .d-flex .col-lg-7 {
+        width: 100%;
+        /* Mengatur lebar menjadi penuh pada layar kecil */
+    }
+
+
+}
