@@ -89,14 +89,14 @@ export default function ChatItem({ data, onReply, onDetailContact }) {
                 >
                     Detail Contact
                 </button>
-                <button
+                {/* <button
                     style={buttonStyle}
                     onMouseEnter={() => setIsHover(true)}
                     onMouseLeave={() => setIsHover(false)}
                     onClick={() => onReply(data)}
                 >
                     Balas
-                </button>
+                </button> */}
             </div>
 
         </div >

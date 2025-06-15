@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import QrReader from "react-qr-scanner";
+import { QrReader } from "react-qr-reader";
 import { useNavigate } from "react-router-dom";
 
 const QRScanner = () => {
@@ -7,15 +7,15 @@ const QRScanner = () => {
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
-    const handleScan = async (qrData) => {
-        if (!qrData || !qrData.text) return;
-        const code = qrData.text;
+    const handleScan = async (result) => {
+        if (!result || !result.text) return;
+        const code = result.text;
 
         try {
             const res = await fetch(`https://script.google.com/macros/s/AKfycbx_bUCrNKsOtExxKBBE4vHOlckKm_NGFQ7NQ3StArU-c5pLjIO4oTAH6Ldw71eb6ZWM2w/exec?jenis_trx=getRiwayatPembelian&kode=${code}`);
-            const result = await res.json();
-            if (result.success) {
-                setData(result.data);
+            const resultJson = await res.json();
+            if (resultJson.success) {
+                setData(resultJson.data);
             } else {
                 navigate("/notfound");
             }
@@ -29,18 +29,15 @@ const QRScanner = () => {
         setError("Gagal membuka kamera.");
     };
 
-    const handleRefresh = () => {
-        setData(null);
-        setError("");
-    };
-
     return (
         <div>
             {!data && (
                 <QrReader
-                    delay={300}
-                    onError={handleError}
-                    onScan={handleScan}
+                    constraints={{ facingMode: "environment" }}
+                    onResult={(result, error) => {
+                        if (result) handleScan(result);
+                        if (error) handleError(error);
+                    }}
                     style={{ width: "100%" }}
                 />
             )}
@@ -70,7 +67,7 @@ const QRScanner = () => {
                             }
 
                             if (key === "Pemesanan") {
-                                const lines = value.split("\n").filter(Boolean); // pisah baris
+                                const lines = value.split("\n").filter(Boolean);
                                 const items = [];
                                 let total = "";
 
@@ -120,8 +117,6 @@ const QRScanner = () => {
                                     <strong>{key}:</strong> {value}
                                 </p>
                             );
-
-
                         }
                     })}
 
@@ -131,7 +126,6 @@ const QRScanner = () => {
                     >
                         Scan Ulang
                     </button>
-
                 </div>
             )}
 

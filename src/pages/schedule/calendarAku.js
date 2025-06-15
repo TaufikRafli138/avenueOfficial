@@ -142,7 +142,25 @@ const EventModal = ({ event, onClose }) => {
 
         <div style={contactListStyle}>
           <a
-            href={`https://wa.me/?text=${encodeURIComponent(`Acara: ${event.title}\n${event.description}\n${event.start.toLocaleString()} - ${event.end.toLocaleString()}\nLokasi: ${event.lokasi}`)}`}
+            href={`https://wa.me/?text=${encodeURIComponent(`🎌 Hai minna-san~! 🎌
+Kabar gembira buat kalian para VenUs Avenue J! ✨
+
+Setelah sekian lama menanti, akhirnya momen yang ditunggu-tunggu datang juga! Saatnya kita berkumpul, bersenang-senang, dan merayakan event spesial yang penuh warna dan semangat. Avenue J, idol group kesayangan kalian yang membawakan berbagai lagu cover anime dan J-Pop, serta membawakan single original mereka, akan tampil secara langsung di event spesial ini! Untuk detailnya bisa dicek di bawah ini ya~ 🎉
+
+🌟 Avenue J proudly presents 🌟
+🌸 ${event.name} 🌸
+
+📅 Tanggal: ${event.start.toLocaleDateString('id-ID')}
+🕖 Waktu: Pukul ${event.start.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })} WIB
+📍 Lokasi: ${event.location}
+
+Bersiaplah untuk malam yang tak akan terlupakan! Akan ada penampilan spesial dari Avenue J, membawakan lagu-lagu favorit kalian dengan penuh semangat! 🎤🎶🎭
+
+✨ Yuk datang dan ramaikan! Tunjukkan semangatmu sebagai VenUs sejati, dan nyanyikan lagu-lagu favorit bersama kami! Dukung Avenue J di panggung dan jadilah bagian dari perjalanan kami!
+
+📢 Save the date dan ajak rekan, pacar, teman, teman rasa pacar, selingkuhan, adek-adekan, atau apapun itu!
+Let’s create an unforgettable night, together with Avenue J!
+— Dengan cinta dan semangat dari kami, Avenue J 💖`)}`}
             target="_blank"
             rel="noopener noreferrer"
             style={iconButton("#25D366")}

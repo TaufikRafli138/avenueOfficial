@@ -63,15 +63,19 @@ export default function Datainbox() {
                 password
             };
 
-            const URL = encodeURIComponent(
+            const URL =
                 "https://script.google.com/macros/s/AKfycbx_bUCrNKsOtExxKBBE4vHOlckKm_NGFQ7NQ3StArU-c5pLjIO4oTAH6Ldw71eb6ZWM2w/exec?jenis_trx=login"
-            );
+                ;
 
-            const response = await fetch(`http://localhost:3001/proxy?targetUrl=${URL}`, {
+            const response = await fetch(URL, {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                redirect: "follow",
+                headers: {
+                    "Content-Type": "text/plain;charset=utf-8",
+                },
                 body: JSON.stringify(payload),
             });
+
 
             const data = await response.json();
             console.log(response);
