@@ -4,8 +4,8 @@ const member = {
         Audrey: {
             profile: "/odiProfile.jpg",
             nama: "Audrey Glacia Cipta",
-            bod: "18/03/2001",
-            horoskop: "Sagitarius",
+            bod: "24 Agustus",
+            horoskop: "Virgo",
             tinggi: "180",
             callsign: "Audrey",
             email: "audrey.avenue@gmail.com",
@@ -20,8 +20,8 @@ const member = {
         Aurell: {
             profile: "/aurellProfile.jpg",
             nama: "Syahla Nazmi NoorAurell",
-            bod: "18/03/2001",
-            horoskop: "Sagitarius",
+            bod: "03 Januari",
+            horoskop: "Capricorn",
             tinggi: "180",
             callsign: "Aurell",
             email: "audrey.avenue@gmail.com",
@@ -53,8 +53,8 @@ const member = {
         Nara: {
             profile: "/naraProfile.jpg",
             nama: "Nazwa Zahra",
-            bod: "04 Mei 2006",
-            horoskop: "Leo",
+            bod: "03 May",
+            horoskop: "Taurus",
             tinggi: "180",
             callsign: "Nara",
             email: "nara.avenue@gmail.com",
@@ -69,8 +69,8 @@ const member = {
         Viola: {
             profile: "/vioProfile.jpg",
             nama: "Viola Erlanda Cipta",
-            bod: "18/03/2001",
-            horoskop: "Sagitarius",
+            bod: "17 May",
+            horoskop: "Taurus",
             tinggi: "180",
             callsign: "Viola",
             email: "viola.avenue@gmail.com",

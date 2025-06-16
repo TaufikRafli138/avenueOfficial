@@ -148,11 +148,11 @@ Kabar gembira buat kalian para VenUs Avenue J! ✨
 Setelah sekian lama menanti, akhirnya momen yang ditunggu-tunggu datang juga! Saatnya kita berkumpul, bersenang-senang, dan merayakan event spesial yang penuh warna dan semangat. Avenue J, idol group kesayangan kalian yang membawakan berbagai lagu cover anime dan J-Pop, serta membawakan single original mereka, akan tampil secara langsung di event spesial ini! Untuk detailnya bisa dicek di bawah ini ya~ 🎉
 
 🌟 Avenue J proudly presents 🌟
-🌸 ${event.name} 🌸
+🌸 ${event.title} 🌸
 
 📅 Tanggal: ${event.start.toLocaleDateString('id-ID')}
 🕖 Waktu: Pukul ${event.start.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })} WIB
-📍 Lokasi: ${event.location}
+📍 Lokasi: ${event.lokasi}
 
 Bersiaplah untuk malam yang tak akan terlupakan! Akan ada penampilan spesial dari Avenue J, membawakan lagu-lagu favorit kalian dengan penuh semangat! 🎤🎶🎭
 
@@ -351,7 +351,7 @@ export default function CalendarComponent() {
             <div>
               <strong>{event.title}</strong>
               <div style={{ fontSize: "0.75rem" }}>
-                {format(event.start, "HH:mm")} - {format(event.end, "HH:mm")} {event.lokasi ? ` (${event.lokasi})` : ""}
+                {/* {format(event.start, "HH:mm")} - {format(event.end, "HH:mm")} {event.lokasi ? ` (${event.lokasi})` : ""} */}
               </div>
             </div>
           ),

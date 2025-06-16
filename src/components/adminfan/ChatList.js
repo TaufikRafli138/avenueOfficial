@@ -54,7 +54,7 @@ export default function ChatList({ chats, onRefresh }) {
     };
 
     const onApproval = async (data) => {
-        const confirmDelete = window.confirm(`Yakin ingin menghapus surat dari ${data.Nama}?`);
+        const confirmDelete = window.confirm(`Yakin ingin meng-approve surat dari ${data.Nama}, dan akan diteruskan ke member terkait ?`);
         if (!confirmDelete) return;
 
         try {
