@@ -225,7 +225,7 @@ const QRScanner = () => {
                     ) : data["Status"] === "Waiting Approval" ? (
                         <div className="alert alert-warning">⏳ Menunggu pembayaran disetujui</div>
                     ) : (
-                        <div className="alert alert-secondary">⚠️ Status tidak dikenali</div>
+                        <div className="alert alert-warning">⏳ Menunggu pembayaran disetujui</div>
                     )}
                     <button
                         style={hover1 ? buttonHoverStyle1 : buttonStyle1}
